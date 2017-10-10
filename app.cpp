@@ -8,18 +8,44 @@ using std::string;
 using std::vector;
 #include<iostream>
 #include<fstream>
-#include<conio.h>
-#include<windows.h>
 #include<ctime>
 
+#ifndef __COMPILE_IN_LINUX
+
+#include<windows.h>
+#include<conio.h>
 void setColor(unsigned short ForeColor, unsigned short BackGroundColor) {
 	HANDLE handle=GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(handle,ForeColor+BackGroundColor*0x10);
 }
-
 void resetColor(){
 	setColor(7, 0);
 }
+void clearScreen()
+{
+	system("cls");
+}
+
+#else
+
+#include <curses.h>
+#include <unistd.h>
+void setColor(unsigned short ForeColor, unsigned short BackGroundColor) {
+	if(BackGroundColor == 0xA)printf("\033[0;37;42m");
+	else if(BackGroundColor == 0xC)printf("\033[0;37;41m");
+}
+void resetColor(){
+	printf("\e[0;37;40m");
+}
+void clearScreen()
+{
+	system("clear");
+	printf("\e[2J");
+}
+
+#endif
+
+
 
 class chooseProblem{
 	public:
@@ -32,41 +58,45 @@ class chooseProblem{
 			suff();
 		}
 		bool run(){
-			printf("%s\n", question.c_str());
+			printf("%s\r\n", question.c_str());
 			for(int i = 0;i < 4;i++)
-				printf("%d : | %s\n", i, items[i].c_str());
+				printf("%d : | %s\r\n", i, items[i].c_str());
 			printf("Choose your answer:");
 			int ch = getch();
 			while(ch >= '4' || ch < '0')ch = getch();
-			printf("%c\n", ch);
+			printf("%c\r\n", ch);
 			if(ans_index == (ch - '0'))setColor(0x0, 0xA);
 			else setColor(0x0, 0xC);
-			printf("Std ans is %d, and your ans is %d.%s.\n",
+			printf("The right answer is %d, and your answer is %d.%s.\r\n",
 				ans_index,
 				ch - '0',
 				ans_index == (ch - '0') ? "Accept" : "Wrong answer"
 			);
 			resetColor();
+			#ifdef __COMPILE_IN_LINUX
+			sleep(1);
+			#else
 			Sleep(1000);
+			#endif
 			return ans_index == (ch - '0');
 		}
 		void print(){
-			printf("%s\n", question.c_str());
+			printf("%s\r\n", question.c_str());
 			for(int i = 0;i < 4;i++)
-				printf("%d : | %s\n", i, items[i].c_str());
-			printf("Answer is %d.\n", ans_index);
+				printf("%d : | %s\r\n", i, items[i].c_str());
+			printf("Answer is %d.\r\n", ans_index);
 		}
 		string toString(){
 			char buf[2000];string ret("");
-			sprintf(buf, "%s\n", question.c_str());
+			sprintf(buf, "%s\r\n", question.c_str());
 			ret = ret + buf;
 			for(int i = 0;i < 4;i++){
-				sprintf(buf, "%d : | %s\n", i, items[i].c_str());
+				sprintf(buf, "%d : | %s\r\n", i, items[i].c_str());
 				ret = ret + buf;
 			}
-			sprintf(buf, "Answer is %d.\n", ans_index);
+			sprintf(buf, "Answer is %d.\r\n", ans_index);
 			ret = ret + buf;
-			return ret + filename + "\n";
+			return ret + filename + "\r\n";
 		}
 	private:
 		void suff(){
@@ -96,28 +126,42 @@ bool vst[300];
 int main(){
 	resetColor();
 	srand(time(NULL));
-	printf("How many questions do you want to slove?\n");
+	printf("How many questions do you want to solve?\r\n");
 	int n;scanf("%d", &n);
+	#ifdef __COMPILE_IN_LINUX
+	initscr();
+	cbreak();
+	noecho();
+	refresh();
+	#endif
 	for(int i = 0;i < n;i++){
 		char buf[50];
 		int x = rand() % 284 + 1;
 		while(vst[x])x = rand() % 284 + 1;
 		vst[x] = 1;
+		#ifdef __USING_UTF8
+		sprintf(buf, "data_utf8/%d.txt", x);
+		#else
 		sprintf(buf, "data/%d.txt", x);
+		#endif
 		chooseProblem cp(buf);
-		system("cls");
-		printf("Sloving question %d in %d:\n", i + 1, n);
+		clearScreen();
+		printf("Solving question %d in %d:\r\n", i + 1, n);
 		if(!cp.run())wrong.push_back(cp);
 		std::ofstream out("wrong.txt");
 		for(int i = 0;i < wrong.size();i++)out << wrong[i].toString() << std::endl;
 		out.close();
 	}
-	system("cls");
-	printf("Your accept radio is %lf%% (%d / %d).\n",
+	clearScreen();
+	printf("Your accepted radio is %lf%% (%d / %d).\r\n",
 		(double)(n - wrong.size()) / n * 100,
-		n - wrong.size(),
+		(int)(n - wrong.size()),
 		n
 	);
-	puts("All your wrong problem(s) has saved to wrong.txt");
+	if(n == 1)puts("The wrong problem has been saved to wrong.txt");
+	else puts("All your wrong problems have been saved to wrong.txt");
+	#ifdef __COMPILE_IN_LINUX
+	endwin();
+	#endif
 	return 0;
 }
