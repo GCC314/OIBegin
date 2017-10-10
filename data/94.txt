@@ -1,0 +1,5 @@
+NOIP2007普及组第9题：在下列各软件，不属于NOIP竞赛（复赛）推荐使用的语言环境有（） 
+Turbo C
+gcc
+g++
+Free Pascal

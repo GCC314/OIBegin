@@ -1,0 +1,5 @@
+NOIP2012普及组第14题：（）是目前互联网上常用的E-mail服务协议。
+POP3
+HTTP
+FTP
+Telnet

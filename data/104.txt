@@ -1,0 +1,5 @@
+NOIP2004普及组第2题：下列哪个不是CPU（中央处理单元）（）
+DDR SDRAM
+Intel Itanium
+AMD Athlon64
+AMD Opteron

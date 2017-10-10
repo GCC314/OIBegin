@@ -1,0 +1,5 @@
+NOIP2009普及组第19题、提高组第10题：全国信息学奥林匹克的官方网站为参与信息学竞赛的老师同学们提供相关的信息和资源，请问全国信息学奥林匹克官方网站的网址是：
+http://www.noi.cn/
+http://www.noi.com/
+http://www.noi.org/
+http://www.xinxixue.com/

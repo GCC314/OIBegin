@@ -1,0 +1,6 @@
+NOIP2008普及组第6题、提高组第1题：在以下各项中，(   ）不是操作系统软件。 
+Sybase
+Solaris
+Linux
+Windows Vista
+

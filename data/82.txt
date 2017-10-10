@@ -1,0 +1,5 @@
+NOIP2008普及组第19题：下列不属于NOIP竞赛推荐使用的语言环境的是（     ）。
+Visual C++
+Dev-C++
+Free Pascal
+Lazarus

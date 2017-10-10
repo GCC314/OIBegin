@@ -1,0 +1,5 @@
+NOIP2002提高组第9题：在使用E-mail前,需要对OUTLOOK进行设置,其中ISP接收电子邮件的服务器称为(        ) 服务器。
+POP3
+SMTP
+DNS
+FTP

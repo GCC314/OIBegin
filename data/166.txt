@@ -1,0 +1,5 @@
+NOIP2003普及组第11题：第一个给计算机写程序的人是( )。 
+Ada Lovelace
+Alan Mathison Turing
+John von Neumann
+John McCarthy

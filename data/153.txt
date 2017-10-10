@@ -1,0 +1,5 @@
+NOIP2005普及组第20题：设栈S的初始状态为空，元素a, b, c, d, e, f, g依次入栈，以下出栈序列不可能出现的是（ ）。
+g, e, f, d, c, b, a
+b, c, a, f, e, g, d
+a, e, d, c, b, f, g
+d, c, f, e, b, a, g

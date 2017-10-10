@@ -1,0 +1,5 @@
+NOIP2002普及组第6题：下列哪一种程序设计语言是解释执行的(    ) 。
+GWBASIC
+Pascal
+C++
+FORTRAN

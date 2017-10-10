@@ -1,0 +1,5 @@
+NOIP2008普及组第2题：设A=True，B=False，C=True，D=False，以下逻辑运算表达式值为真的是（   ）。
+((﹁A∧B) ∨C)∧﹁D
+(A∧B)∨(C∧D∨﹁A)
+(B∨C∨D) ∧D∧A
+A∧（D∨﹁C）∧B

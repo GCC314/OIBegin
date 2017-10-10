@@ -1,0 +1,5 @@
+NOIP1999普及组第12题、提高组第12题：执行下列DOS命令，效果等价的是 （   ）组。
+COPY  A: *.*   B:          与  XCOPY   A: *.*    B:
+COPY  *.FOR                与  COPY    *.FOR     CON
+COPY  FILE1.TXT + FILE2.TXT与  COPY FILE2.TXT +FILE1.TXT
+XCOPY  A: *.*  B :/S       与  DISKCOPY   A:  B: 

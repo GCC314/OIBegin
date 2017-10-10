@@ -1,0 +1,5 @@
+NOIP2005普及组第15题：下列浏览器中，由微软公司开发的浏览器是（ ）。
+Internet Explore
+Netscape
+Opera
+Firefox

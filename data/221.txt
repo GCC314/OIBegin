@@ -1,0 +1,5 @@
+NOIP2001提高组第20题：无向图G=(V，E)，其中V={a,b,c,d,e,f} E={(a,b),(a,e),(a,c),(b,e),(c,f),(f,d),(e,d)}对该图进行深度优先遍历,得到的顶点序列正确的是(  )
+a,b,e,d,f,c
+a,b,e,c,d,f
+a,c,f,e,b,d
+a,e,b,c,f,d

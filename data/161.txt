@@ -1,0 +1,5 @@
+NOIP2003普及组第6题：下列电子邮件地址，正确的是( )。 
+wang@hotmail.com
+cai@jcc.pc.tool@rf.edu.jp
+162.105.111.22
+ccf.edu.cn

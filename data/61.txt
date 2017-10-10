@@ -1,0 +1,5 @@
+NOIP2010普及组第14题：在下列HTML语句中，可以正确产生一个指向NOI官方网站的超链接的是（）。 
+<a href=http://www.noi,cn>欢迎访问NOI网站</a>
+<a url=http://www.noi,cn>欢迎访问NOI网站</a> 
+<a> http://www.noi,cn </a> 
+<a name=http://www.noi,cn>欢迎访问NOI网站</a>

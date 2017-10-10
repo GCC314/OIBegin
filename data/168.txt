@@ -1,0 +1,5 @@
+NOIP2003普及组第15题：假设A=true，B=false，C=true，D=true，逻辑运算表达式A∧B∨C∧D的值是( )。 
+true
+false
+0
+1

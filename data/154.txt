@@ -1,0 +1,5 @@
+NOIP2005提高组第9题：不能在Linux上使用的网页浏览器是（?）。?
+Internet Explore
+Netscape
+Opera
+Firefox

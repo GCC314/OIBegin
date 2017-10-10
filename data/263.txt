@@ -1,0 +1,5 @@
+NOIP1999普及组第20题、提高组第20题：对具有隐含属性（H）的当前目录下的文件ab.txt， 能成功执行的DOS命令是（  ）
+TYPE  ab.txt
+COPY  ab.txt  xy.txt
+DIR  ab.txt
+REN  ab.txt   xy.txt 

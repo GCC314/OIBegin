@@ -1,0 +1,5 @@
+NOIP2004普及组第12题：下列哪个程序设计语言不支持面向对象的程序设计方法（）
+C
+C++
+Object Pascal
+Smalltalk

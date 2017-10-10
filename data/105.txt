@@ -1,0 +1,5 @@
+NOIP2004普及组第3题：下列网络中常用的名字缩写对应的中文解释错误的是（ ）
+FTP(File Transfer Protocol)：快速传输协议
+URL（Uinform Resource Locator）：统一资源定位器
+HTTP（Hypertext Transfer Protocol）：超文本传输协议
+TCP （Transfer Control Protocol）：传输控制协议

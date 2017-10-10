@@ -1,0 +1,5 @@
+NOIP2004普及组第11题：下列哪个不是数据库软件的名称（）
+金山影霸
+MYSQL
+SQL Sever
+Oracle

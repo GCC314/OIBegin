@@ -1,0 +1,5 @@
+NOIP1999普及组第6题、提高组第6题：在CONFIG.SYS 文件中，装入特定可安装设备驱动程序的命令是 （   ）。
+DEVICE
+BUFFER
+FILES
+DRIVER

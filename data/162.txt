@@ -1,0 +1,5 @@
+NOIP2003普及组第7题：数字图像文件可以用下列哪个软件来编辑( )。 
+画笔(Paintbrush)
+记事簿(Notepad)
+Recorder
+WinRAR

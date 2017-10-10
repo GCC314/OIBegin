@@ -1,0 +1,5 @@
+NOIP2012普及组第5题：（）不属于操作系统。
+Photoshop
+Windows
+DOS
+NOILinux

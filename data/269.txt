@@ -1,0 +1,5 @@
+NOIP1997普及组第2题：下列软件均属于操作系统的是（）
+WINDOWS 与 MS DOS 
+WPS 与 PC DOS 
+WORD 与 WINDOWS 
+FOXBASE 与 OS/2 

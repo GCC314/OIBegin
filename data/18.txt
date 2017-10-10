@@ -1,0 +1,5 @@
+NOIP2006普及组第12题、提高组第6题：在Pascal语言中，判断a不等于0且b不等于0的正确的条件表达式是（ ） 
+(a<>0)and (b<>0) 
+not a=0 or not b=0
+not((a=0)and(b=0)) 
+not(a=0 and b=0)

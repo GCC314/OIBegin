@@ -1,0 +1,5 @@
+NOIP2004普及组第5题：下列哪个软件属于操作系统软件（）
+Red Hat Linux
+Microsoft Word
+Foxmail
+WinRAR
