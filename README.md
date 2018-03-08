@@ -13,18 +13,18 @@ OIBegin,written by C++,executed in command lines,is still a semi-completed progr
 
 ## Make & Run
 For Windows users,execute app.exe.
-For Linux users,execute ./anscpp.pg.
+For Linux users,execute ```./anscpp.pg```.
 
 
 To compile it in Windows,just run:
-    g++ app.cpp -o app.exe
+    ```g++ app.cpp -o app.exe```
 
 
 While in Linux,some extra work should be done:
     Install the library *ncurses-dev*:
-        sudo apt-get install ncurses-dev (For Debian Users)
+        ```sudo apt-get install ncurses-dev (For Debian Users)```
     Compile:
-        g++ app.cpp -o anscpp.pg -lcurses -D __COMPILE_IN_LINUX -D __USING_UTF8
+        ```g++ app.cpp -o anscpp.pg -lcurses -D __COMPILE_IN_LINUX -D __USING_UTF8```
 
 
 Well,have a nice experience!
